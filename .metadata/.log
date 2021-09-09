@@ -53,3 +53,9 @@ Created Time: 2021-09-09 12:12:08.641
 
 !ENTRY org.eclipse.wst.server.core 4 0 2021-09-09 12:39:28.182
 !MESSAGE Could not delete C:/Users/bitcamp/_______/tripn-study/eGovFrame/workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/bookstore/WEB-INF/classes/shop/tripn/oracle/publisher/mapper. May be locked by another process.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-09-09 12:51:40.840
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-09-09 12:51:40.844
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
