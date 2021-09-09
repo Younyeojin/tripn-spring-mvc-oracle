@@ -1,0 +1,5 @@
+package shop.tripn.oracle.book.domain;
+
+public class BookDto {
+
+}

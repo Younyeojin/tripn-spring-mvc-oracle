@@ -1,0 +1,8 @@
+package shop.tripn.oracle.user.service;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class UserService {
+
+}

@@ -1,0 +1,41 @@
+1630914483653	Delete element
+1631059466546	Move 'spring' to 'META-INF'
+1631059782701	Move 'servlet-context.xml' to 'spring'
+1631059790691	Delete element
+1631067746559	Delete element
+1631067750957	Delete element
+1631067754940	Delete elements
+1631067885754	Delete elements
+1631068344116	Delete element
+1631068346919	Delete element
+1631068349492	Delete element
+1631070230874	Delete element
+1631073133774	Rename package 'shop.tripn.oracle.user.controller'
+1631073144812	Rename package 'shop.tripn.oracle.user.domain'
+1631073153344	Rename package 'shop.tripn.oracle.user.mapper'
+1631073165388	Rename package 'shop.tripn.oracle.user.service'
+1631073208370	Rename type 'User'
+1631073215602	Rename type 'UserController'
+1631073221434	Rename type 'UserMapper'
+1631073236423	Rename type 'UserServiceImpl'
+1631073248317	Rename type 'UserService'
+1631073423544	Delete element
+1631073513000	Delete element
+1631073545088	Delete element
+1631073621342	Delete element
+1631077434637	Rename package 'shop.tripn.oracle.order.servicer'
+1631077488395	Delete element
+1631078206012	Move 'OrderMapper.xml' to 'mapper'
+1631078209438	Move 'BookMapper.xml' to 'mapper'
+1631078246325	Delete element
+1631078249064	Move 'PublishersMapper.xml' to 'mapper'
+1631078550828	Rename package 'shop.tripn.oracle.publishers.controller'
+1631078557593	Rename package 'shop.tripn.oracle.publishers.domain'
+1631078562369	Rename package 'shop.tripn.oracle.publishers.mapper'
+1631078566749	Rename package 'shop.tripn.oracle.publishers.service'
+1631078573889	Rename type 'PublishersController'
+1631078577967	Rename type 'PublishersDto'
+1631078581865	Rename type 'PublishersMapper'
+1631078589200	Rename type 'PublishersService'
+1631078594184	Rename type 'PublishersServiceImpl'
+1631156654871	Rename package 'shop.tripn.oracle.book.mapper'

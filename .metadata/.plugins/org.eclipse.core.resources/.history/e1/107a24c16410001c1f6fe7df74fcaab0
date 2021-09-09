@@ -1,0 +1,5 @@
+package shop.tripn.oracle.order.mapper;
+
+public interface OrderMapper {
+
+}

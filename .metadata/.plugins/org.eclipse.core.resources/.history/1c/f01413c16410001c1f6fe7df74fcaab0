@@ -1,0 +1,5 @@
+package shop.tripn.oracle.order.controller;
+
+public class OrderController {
+
+}

@@ -1,0 +1,5 @@
+package shop.tripn.oracle.user.mapper;
+
+public interface UserMapper {
+
+}

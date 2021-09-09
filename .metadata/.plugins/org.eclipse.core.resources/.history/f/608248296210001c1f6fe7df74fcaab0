@@ -1,0 +1,5 @@
+package shop.tripn.oracle.book.controller;
+
+public class BookController {
+
+}

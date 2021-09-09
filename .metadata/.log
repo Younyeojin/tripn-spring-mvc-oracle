@@ -1,0 +1,55 @@
+!SESSION 2021-09-09 12:08:03.700 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+This is a continuation of log file C:\Users\bitcamp\_______\tripn-study\eGovFrame\workspace\.metadata\.bak_0.log
+Created Time: 2021-09-09 12:12:08.641
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-09-09 12:12:08.641
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-09-09 12:12:08.647
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-09-09 12:21:40.491
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-09-09 12:21:40.494
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-09-09 12:21:40.503
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-09-09 12:21:41.740
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-09-09 12:21:41.748
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-09-09 12:32:16.657
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-09-09 12:32:16.664
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-09-09 12:39:03.406
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-09-09 12:39:03.410
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-09-09 12:39:11.678
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-09-09 12:39:11.682
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.wst.server.core 4 0 2021-09-09 12:39:13.748
+!MESSAGE Could not delete C:/Users/bitcamp/_______/tripn-study/eGovFrame/workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/bookstore/WEB-INF/classes/shop/tripn/oracle/publisher/mapper. May be locked by another process.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2021-09-09 12:39:28.182
+!MESSAGE Could not delete C:/Users/bitcamp/_______/tripn-study/eGovFrame/workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/bookstore/WEB-INF/classes/shop/tripn/oracle/publisher/mapper. May be locked by another process.

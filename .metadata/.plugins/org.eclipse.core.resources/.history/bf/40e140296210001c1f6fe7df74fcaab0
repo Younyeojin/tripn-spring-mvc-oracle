@@ -1,0 +1,5 @@
+package shop.tripn.oracle.customer.service;
+
+public interface CustomerService {
+
+}
