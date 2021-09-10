@@ -1,8 +1,0 @@
-package shop.tripn.oracle.customer.mapper;
-
-import org.springframework.stereotype.Service;
-
-@Service
-public class UserServiceImpl {
-
-}

@@ -1,5 +1,0 @@
-package shop.tripn.oracle.publishers.service;
-
-public interface PublishersService {
-
-}
