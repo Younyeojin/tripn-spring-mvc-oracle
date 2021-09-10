@@ -39,3 +39,7 @@
 1631078589200	Rename type 'PublishersService'
 1631078594184	Rename type 'PublishersServiceImpl'
 1631156654871	Rename package 'shop.tripn.oracle.book.mapper'
+1631245874144	Encapsulate field 'bookId'
+1631245878660	Encapsulate field 'bookTitle'
+1631245887090	Encapsulate field 'price'
+1631245890920	Encapsulate field 'pubId'
