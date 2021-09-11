@@ -1,4 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="shop.tripn.oracle.mappers.PublisherMapper">
+	<select id="findAll" resultType="shop.tripn.oracle.publisher.domain.PublisherDto">
+		select
+            pub_id pubId,
+            pub_name pubName,
+            mgr_name mgrName,
+            phone
+            from publishers
+	</select>
+	<select id="findPubId" resultType="shop.tripn.oracle.publisher.domain.PublisherDto" parameterType="int">
+		select
+            pub_id pubId,
+            pub_name pubName,
+            mgr_name mgrName,
+            phone
+            from publishers
+            where pub_id like ${pubId}
+	</select>
+	<select id="findPubName" resultType="shop.tripn.oracle.publisher.domain.PublisherDto" parameterType="string">
+		select
+            pub_id pubId,
+            pub_name pubName,
+            mgr_name mgrName,
+            phone
+            from publishers
+            where pub_name '%' || #{value} || '%'
+	</select>
+	<select id="findMgrName" resultType="shop.tripn.oracle.publisher.domain.PublisherDto" parameterType="string">
+		select
+            pub_id pubId,
+            pub_name pubName,
+            mgr_name mgrName,
+            phone
+            from publishers
+            where mgr_name '%' || #{value} || '%'
+	</select>
+	<select id="findPhone" resultType="shop.tripn.oracle.publisher.domain.PublisherDto" parameterType="string">
+		select
+            pub_id pubId,
+            pub_name pubName,
+            mgr_name mgrName,
+            phone
+            from publishers
+            where phone '%' || #{value} || '%'
+	</select>
 </mapper>

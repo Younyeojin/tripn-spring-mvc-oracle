@@ -10,5 +10,8 @@ import shop.tripn.oracle.book.domain.BookDto;
 public interface BookService {
 	public List<BookDto> findAll();
 	public BookDto findById(int bookId);
+	public List<BookDto> findByPubId(int pubId);
+	public List<BookDto> findByBookTitle(String bookTitle);
+	public List<BookDto> findByPrice(int price);
 	
 }

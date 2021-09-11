@@ -19,4 +19,34 @@
 		 from books
          where book_id like ${bookId}
 	</select>
+	<select id="findByPubId" resultType="shop.tripn.oracle.book.domain.BookDto" 
+	parameterType="int">
+		select 
+			book_id bookId,
+			book_title bookTitle,
+			price,
+			pub_id pubId
+		 from books
+         where pub_id like ${pubId}
+	</select>
+	<select id="findByBookTitle" resultType="shop.tripn.oracle.book.domain.BookDto" 
+	parameterType="string">
+		select 
+			book_id bookId,
+			book_title bookTitle,
+			price,
+			pub_id pubId
+		 from books
+         where book_title '%' || #{value} || '%'
+	</select>
+	<select id="findByPrice" resultType="shop.tripn.oracle.book.domain.BookDto" 
+	parameterType="int">
+		select 
+			book_id bookId,
+			book_title bookTitle,
+			price,
+			pub_id pubId
+		 from books
+         where price >= ${price}
+	</select>
 </mapper>
