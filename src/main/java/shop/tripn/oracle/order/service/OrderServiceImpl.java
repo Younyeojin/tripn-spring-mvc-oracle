@@ -2,13 +2,15 @@ package shop.tripn.oracle.order.service;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import shop.tripn.oracle.mappers.OrderMapper;
 import shop.tripn.oracle.order.domain.OrderDto;
 
 @Service
 public class OrderServiceImpl implements OrderService {
-
+	@Autowired OrderMapper orderMapper;
 	@Override
 	public List<OrderDto> findAll() {
 		// TODO Auto-generated method stub
@@ -43,6 +45,12 @@ public class OrderServiceImpl implements OrderService {
 	public List<OrderDto> findOrderDate(String orderDate) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public void save(OrderDto order) {
+		// TODO Auto-generated method stub
+		orderMapper.save(order);
 	}
 
 	

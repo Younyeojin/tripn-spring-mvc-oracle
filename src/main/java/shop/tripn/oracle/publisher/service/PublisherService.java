@@ -13,4 +13,5 @@ public interface PublisherService {
 	public List<PublisherDto> findPubName(String pubName);
 	public List<PublisherDto> findMgrName(String MgrName);
 	public List<PublisherDto> findPhone(String Phone);
+	public void save(PublisherDto publisher);
 }

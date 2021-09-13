@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="shop.tripn.oracle.mappers.CustomerMapper">
-	<select id="findAll" resultType="shop.tripn.oracle.customer.domain.CustomerDto">
+	<insert id="save" parameterType="shop.tripn.oracle.customer.domain.CustomerDto">
+		insert into
+		customers (cust_id, cust_name, address, phone)
+		values (${custId}, #{custName}, #{address}, #{phone} )
+	</insert>
+	<!--  <select id="findAll" resultType="shop.tripn.oracle.customer.domain.CustomerDto">
 		select
             cust_id custId,
             cust_name custName,
@@ -44,5 +49,5 @@
             phone
         from customers
         where phone like '%'|| #{value} || '%'
-	</select>
+	</select>-->
 </mapper>

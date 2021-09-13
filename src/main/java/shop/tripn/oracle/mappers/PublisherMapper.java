@@ -13,5 +13,5 @@ public interface PublisherMapper {
 	public List<PublisherDto> findPubName();
 	public List<PublisherDto> findMgrName();
 	public List<PublisherDto> findPhone();
-
+	public void save(PublisherDto publisher);
 }

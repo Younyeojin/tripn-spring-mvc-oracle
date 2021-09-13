@@ -1,6 +1,6 @@
 package shop.tripn.oracle.customer.service;
 
-import java.util.List;
+//import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -10,36 +10,14 @@ import shop.tripn.oracle.mappers.CustomerMapper;
 
 @Service
 public class CustomerServiceImpl implements CustomerService{
-	@Autowired CustomerMapper customerMapper;
+	@Autowired CustomerMapper mapper;
 
 	@Override
-	public List<CustomerDto> findAll() {
+	public void save(CustomerDto customer) {
 		// TODO Auto-generated method stub
-		return customerMapper.findAll();
+		mapper.save(customer);
 	}
 
-	@Override
-	public CustomerDto findCustId() {
-		// TODO Auto-generated method stub
-		return customerMapper.findCustId();
-	}
-
-	@Override
-	public List<CustomerDto> findCustName() {
-		// TODO Auto-generated method stub
-		return customerMapper.findCustName();
-	}
-
-	@Override
-	public List<CustomerDto> findAddress() {
-		// TODO Auto-generated method stub
-		return customerMapper.findAddress();
-	}
-
-	@Override
-	public List<CustomerDto> findPhone() {
-		// TODO Auto-generated method stub
-		return customerMapper.findPhone();
-	}
+	
 	
 }

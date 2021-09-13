@@ -1,6 +1,6 @@
 package shop.tripn.oracle;
 
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.request;
+//import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.request;
 
 //import java.text.DateFormat;
 //import java.util.Date;
@@ -37,8 +37,21 @@ public class HomeController {
 	@RequestMapping(value="/joinform", method = RequestMethod.GET)
 	public String join(Locale locle, Model model) {
 		return "/user/Join";
+	} 
+	@RequestMapping(value="/bookform", method= {RequestMethod.GET})
+	public String book(Locale locle, Model model) {
+		return "/book/book";
+	}
+	@RequestMapping(value="/orderform", method= {RequestMethod.GET})
+	public String order(Locale locle, Model model) {
+		return "/order/order";
+	}
+	@RequestMapping(value="/pubform", method= {RequestMethod.GET})
+	public String publisher(Locale locle, Model model) {
+		return "/publisher/publisher";
 	}
 }
+
 
 //
 //logger.info("Welcome home! The client locale is {}.", locale);
