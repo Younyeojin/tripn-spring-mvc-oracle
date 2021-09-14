@@ -1,4 +1,4 @@
-package shop.tripn.oracle;
+package shop.tripn.oracle.common;
 
 //import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.request;
 
@@ -40,7 +40,7 @@ public class HomeController {
 	} 
 	@RequestMapping(value="/bookform", method= {RequestMethod.GET})
 	public String book(Locale locle, Model model) {
-		return "/book/book";
+		return "/book/List";
 	}
 	@RequestMapping(value="/orderform", method= {RequestMethod.GET})
 	public String order(Locale locle, Model model) {

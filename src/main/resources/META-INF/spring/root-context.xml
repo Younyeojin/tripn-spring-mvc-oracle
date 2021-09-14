@@ -38,6 +38,7 @@
 		<bean class="org.mybatis.spring.SqlSessionFactoryBean" id="sqlSessionFactoryBean">
 			<property name="dataSource" ref="basicDataSource"/>
 			<property name="mapperLocations" value="classpath:shop/tripn/oracle/mappers/*.xml"/>
+			<property name="configLocation" value="classpath:/META-INF/spring/mybatis-context.xml"/>
 		</bean>
 		<bean class="org.springframework.jdbc.datasource.DataSourceTransactionManager" id="dataSourceTransactionManager">
 			<property name="dataSource" ref="basicDataSource"/>

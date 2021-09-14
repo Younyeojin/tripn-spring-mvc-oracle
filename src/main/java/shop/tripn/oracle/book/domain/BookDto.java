@@ -1,6 +1,7 @@
 package shop.tripn.oracle.book.domain;
 
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import lombok.Data;
 
@@ -34,7 +35,7 @@ public class BookDto {
 	public void setPubId(int pubId) {
 		this.pubId = pubId;
 	}
-	@Override
+	@RequestMapping("")
 	public String toString() {
 		
 		return String.format("책ID: %d, 책제목: %s, 책가격: %d, 출판사ID: %d", bookId, bookTitle, price, pubId);

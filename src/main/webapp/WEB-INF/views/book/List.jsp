@@ -6,14 +6,10 @@
 	<jsp:include page="../common/head.jsp"/>
 <body>
 
-<h2>회원가입 폼</h2>
+<h2>책 목록</h2>
 
-<form action="${contextPath}/customers/join" method="post">
-  <!--<div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
-  </div>  -->
-
-  <div class="container">
+<form action="${contextPath}/books/list" method="post">
+   <div class="container">
     <label for="custId"><b>custId</b></label>
     <input type="text" placeholder="Enter ID" name="custId" required>
     <label for="custName"><b>custName</b></label>

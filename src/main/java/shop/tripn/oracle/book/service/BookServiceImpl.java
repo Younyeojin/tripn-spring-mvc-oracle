@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+//import org.springframework.web.bind.annotation.RequestMapping;
+
 
 import shop.tripn.oracle.book.domain.BookDto;
 import shop.tripn.oracle.mappers.BookMapper;
@@ -11,6 +13,17 @@ import shop.tripn.oracle.mappers.BookMapper;
 @Service
 public class BookServiceImpl implements BookService{
 	@Autowired BookMapper bookMapper;
+	@Override
+	public void save(BookDto t) {
+		// TODO Auto-generated method stub
+		bookMapper.save(t);
+	}
+
+	@Override
+	public BookDto findById(Integer id) {
+		// TODO Auto-generated method stub
+		return bookMapper.findById(id);
+	}
 
 	@Override
 	public List<BookDto> findAll() {
@@ -19,15 +32,15 @@ public class BookServiceImpl implements BookService{
 	}
 
 	@Override
-	public BookDto findById(int bookId) {
-		// TODO Auto-generated method stub
-		return bookMapper.findById(bookId);
+	public void update(BookDto t) {
+		bookMapper.update(t);
+
 	}
 
 	@Override
-	public List<BookDto> findByPubId(int pubId) {
-		// TODO Auto-generated method stub
-		return bookMapper.findByPubId(pubId);
+	public void delete(Integer id) {
+		bookMapper.delete(id);
+
 	}
 
 	@Override
@@ -43,11 +56,12 @@ public class BookServiceImpl implements BookService{
 	}
 
 	@Override
-	public void save(BookDto book) {
+	public List<BookDto> findByPubId(int pubId) {
 		// TODO Auto-generated method stub
-		bookMapper.save(book);
+		return bookMapper.findByPubId(pubId);
 	}
-
+	
+	
 	
 
 }

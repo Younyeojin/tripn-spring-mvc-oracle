@@ -6,7 +6,7 @@
 	<jsp:include page="../common/head.jsp"/>
 <body>
 
-<h2>회원가입 폼</h2>
+<h2>책 목록</h2>
 
 <form action="${contextPath}/customers/join" method="post">
   <!--<div class="imgcontainer">
