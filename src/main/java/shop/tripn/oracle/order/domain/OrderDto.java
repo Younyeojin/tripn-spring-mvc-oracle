@@ -2,15 +2,13 @@ package shop.tripn.oracle.order.domain;
 
 import org.springframework.stereotype.Component;
 
-import lombok.Data;
-
-@Data@Component
+@Component
 public class OrderDto {
-	private int orderId;
-	private int custId;
-	private int bookId;
-	private int orderPrice;
-	private String orderDate;
+	public int orderId;
+	public int custId;
+	public int bookId;
+	public String orderPrice;
+	public String orderDate;
 	public int getOrderId() {
 		return orderId;
 	}
@@ -29,10 +27,10 @@ public class OrderDto {
 	public void setBookId(int bookId) {
 		this.bookId = bookId;
 	}
-	public int getOrderPrice() {
+	public String getOrderPrice() {
 		return orderPrice;
 	}
-	public void setOrderPrice(int orderPrice) {
+	public void setOrderPrice(String orderPrice) {
 		this.orderPrice = orderPrice;
 	}
 	public String getOrderDate() {
@@ -41,6 +39,5 @@ public class OrderDto {
 	public void setOrderDate(String orderDate) {
 		this.orderDate = orderDate;
 	}
-	
 	
 }

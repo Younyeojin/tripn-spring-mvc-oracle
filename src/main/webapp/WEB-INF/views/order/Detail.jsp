@@ -6,21 +6,25 @@
 <jsp:include page="../common/head.jsp"/>
 <body>
 
-<h2>책 상세</h2>
+<h2>Order Detail</h2>
 
-<form action="${contextPath}/books" method="post">
-  <div class="container">
+<form action="<%= application.getContextPath() %>/orders/detail" method="post">
+ <div class="container">
+    <label for="orderId"><b>orderId</b></label>
+    <input type="text" placeholder="Enter Id" name="orderId" required>
+    <label for="custId"><b>custId</b></label>
+    <input type="text" placeholder="Enter custId" name="custId" required>
     <label for="bookId"><b>bookId</b></label>
-    	<input type="text" placeholder="Enter ID" name="bookId" required>
-    <label for="bookTitle"><b>bookTitle</b></label>
-    	<input type="text" placeholder="Enter name" name="bookTitle" required>
-    <label for="price"><b>price</b></label>
-    	<input type="text" placeholder="Enter address" name="price" >
-    <label for="pubId"><b>pubId</b></label>
-    	<input type="text" placeholder="Enter phone" name="pubId" required>
-    <button type="submit">책 상세</button>
+    <input type="text" placeholder="Enter bookId" name="bookId" required>
+    <label for="orderPrice"><b>orderPrice</b></label>
+    <input type="text" placeholder="Enter orderPrice" name="orderPrice" required>
+    <label for="orderDate"><b>orderDate</b></label>
+    <input type="text" placeholder="Enter orderDate" name="orderDate" required>     
+    <button type="submit">Detail</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
   </div>
 </form>
-
 </body>
 </html>

@@ -4,56 +4,67 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import shop.tripn.oracle.mappers.OrderMapper;
 import shop.tripn.oracle.order.domain.OrderDto;
 
 @Service
-public class OrderServiceImpl implements OrderService {
+public class OrderServiceImpl implements OrderService{
 	@Autowired OrderMapper orderMapper;
+
+	@Override
+	public void save(OrderDto t) {
+		// TODO Auto-generated method stub
+		orderMapper.save(t);
+	}
+
+	@Override
+	public OrderDto findById(Integer id) {
+		// TODO Auto-generated method stub
+		return orderMapper.findById(id);
+	}
+
 	@Override
 	public List<OrderDto> findAll() {
 		// TODO Auto-generated method stub
-		return null;
+		return orderMapper.findAll();
 	}
 
 	@Override
-	public List<OrderDto> findOrderId(int orderId) {
+	public void update(OrderDto t) {
 		// TODO Auto-generated method stub
-		return null;
+		orderMapper.update(t);
 	}
 
 	@Override
-	public List<OrderDto> findCustId(int custId) {
+	public void delete(Integer id) {
 		// TODO Auto-generated method stub
-		return null;
+		orderMapper.delete(id);
 	}
 
 	@Override
-	public List<OrderDto> findBookId(int bookId) {
+	public List<OrderDto> findByCustId(int custId) {
 		// TODO Auto-generated method stub
-		return null;
+		return orderMapper.findByCustId(custId);
 	}
 
 	@Override
-	public List<OrderDto> findOrderPrice(int orderPrice) {
+	public List<OrderDto> findByBookId(int bookId) {
 		// TODO Auto-generated method stub
-		return null;
+		return orderMapper.findByBookId(bookId);
 	}
 
 	@Override
-	public List<OrderDto> findOrderDate(String orderDate) {
+	public List<OrderDto> findByOrderPrice(String orderPrice) {
 		// TODO Auto-generated method stub
-		return null;
+		return orderMapper.findByOrderPrice(orderPrice);
 	}
 
 	@Override
-	public void save(OrderDto order) {
+	public List<OrderDto> findByOrderDate(String orderDate) {
 		// TODO Auto-generated method stub
-		orderMapper.save(order);
+		return orderMapper.findByOrderDate(orderDate);
 	}
-
 	
 
 }

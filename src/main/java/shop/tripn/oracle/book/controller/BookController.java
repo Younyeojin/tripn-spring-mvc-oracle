@@ -20,10 +20,11 @@ import shop.tripn.oracle.book.service.BookService;
 public class BookController{
 	@Autowired BookService bookService;
 
-	@RequestMapping("/save")
-	public void save(BookDto t) {
+	@RequestMapping(value="/save", method=RequestMethod.POST)
+	public String save(BookDto book) {
 		// TODO Auto-generated method stub
-		bookService.save(t);
+		bookService.save(book);
+		return"";
 	}
 
 	@RequestMapping("/find/{id}")
